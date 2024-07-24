@@ -1,0 +1,268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1958403947649410}
+  m_IsPrefabParent: 1
+--- !u!1 &1958403947649410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4748218296851220}
+  - component: {fileID: 114153030824193088}
+  - component: {fileID: 114021979092411760}
+  - component: {fileID: 114252093526332588}
+  m_Layer: 0
+  m_Name: DistortedDrawerLS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4748218296851220
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1958403947649410}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114021979092411760
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1958403947649410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b203c52423123f46b89a34013da3572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_maskMaterial: {fileID: 2100000, guid: 4f5f5a2d03f678340ad6f52c39be195b, type: 2}
+  m_maskTextureName: _MaskTex
+--- !u!114 &114153030824193088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1958403947649410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a3594adcc8b5440a737aa263581987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_syncViewpointTransformWithObserver: 1
+  m_screenModel: {fileID: 3300000, guid: 5c86d625d95431a4797fe79884099c12, type: 3}
+  m_drawAsWireframe: 0
+  m_projectionMaterial: {fileID: 2100000, guid: 075054b30f9ffb54f8ea5c590ac22d08,
+    type: 2}
+  m_screenBaseMaterial: {fileID: 2100000, guid: cdf09e2d45e8cb3478d0d2cab880161d,
+    type: 2}
+  m_projectorCamPrefab: {fileID: 0}
+  m_projectorParams:
+  - m_localPosition: {x: 4.780003, y: 7.8, z: -7.5}
+    m_localRotation: {x: -0.13148959, y: 0.023190787, z: 0.0063930736, w: -0.9910256}
+    m_near: 0.05
+    m_far: 25
+    m_width: 1.92
+    m_height: 1.08
+    m_distanceFromScreen: 2.11
+    m_imageOffsetYRate: 0
+    m_viewport:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0.16666667
+      height: 1
+    m_maskTexture: {fileID: 2800000, guid: a9af33ed7ff85024ca7f30f9f7f61fa3, type: 3}
+  - m_localPosition: {x: 0.19999996, y: 8.150001, z: -7.840002}
+    m_localRotation: {x: 0.112393446, y: 0.35655224, z: -0.07406674, w: 0.9245282}
+    m_near: 0.05
+    m_far: 25
+    m_width: 1.92
+    m_height: 1.08
+    m_distanceFromScreen: 2.11
+    m_imageOffsetYRate: 0
+    m_viewport:
+      serializedVersion: 2
+      x: 0.16666667
+      y: 0
+      width: 0.16666667
+      height: 1
+    m_maskTexture: {fileID: 2800000, guid: a1cdd856b283046489d8b99d55cd9207, type: 3}
+  - m_localPosition: {x: 0.10000001, y: 8.1, z: 7.1300035}
+    m_localRotation: {x: 0.06974591, y: 0.91856414, z: -0.12394638, w: 0.36879915}
+    m_near: 0.05
+    m_far: 25
+    m_width: 1.92
+    m_height: 1.08
+    m_distanceFromScreen: 2.01
+    m_imageOffsetYRate: 0
+    m_viewport:
+      serializedVersion: 2
+      x: 0.33333334
+      y: 0
+      width: 0.16666667
+      height: 1
+    m_maskTexture: {fileID: 2800000, guid: 170b496aa440cc34b9e04111121a4a43, type: 3}
+  - m_localPosition: {x: 4.180001, y: 8.450003, z: 4.9999905}
+    m_localRotation: {x: 0.0040822066, y: 0.9846091, z: -0.17445695, w: -0.009646241}
+    m_near: 0.05
+    m_far: 25
+    m_width: 1.92
+    m_height: 1.08
+    m_distanceFromScreen: 1.8100002
+    m_imageOffsetYRate: 0
+    m_viewport:
+      serializedVersion: 2
+      x: 0.5
+      y: 0
+      width: 0.16666667
+      height: 1
+    m_maskTexture: {fileID: 2800000, guid: b95caccb6d5ae0849ab2d6aec80bf71d, type: 3}
+  - m_localPosition: {x: 4.520001, y: 8.250002, z: -6.2999964}
+    m_localRotation: {x: 0.5686949, y: 0.084540434, z: -0.044508006, w: 0.81698114}
+    m_near: 0.05
+    m_far: 25
+    m_width: 1.92
+    m_height: 1.08
+    m_distanceFromScreen: 1.14
+    m_imageOffsetYRate: 0
+    m_viewport:
+      serializedVersion: 2
+      x: 0.6666667
+      y: 0
+      width: 0.16666667
+      height: 1
+    m_maskTexture: {fileID: 2800000, guid: 67e1630941adb31429e409c21f6a3f72, type: 3}
+  - m_localPosition: {x: 4.820002, y: 8.250002, z: 5.4999933}
+    m_localRotation: {x: 0.045905728, y: 0.7967604, z: -0.59804446, w: 0.0735421}
+    m_near: 0.05
+    m_far: 25
+    m_width: 1.92
+    m_height: 1.08
+    m_distanceFromScreen: 1.09
+    m_imageOffsetYRate: 0
+    m_viewport:
+      serializedVersion: 2
+      x: 0.8333333
+      y: 0
+      width: 0.16666667
+      height: 1
+    m_maskTexture: {fileID: 2800000, guid: 68c5fa464ce8d7e4b84822e70999fca5, type: 3}
+  - m_localPosition: {x: -3.4300008, y: 7.9000006, z: 7.5}
+    m_localRotation: {x: 0.0023593165, y: -0.99100035, z: 0.13248822, w: 0.018963236}
+    m_near: 0.05
+    m_far: 25
+    m_width: 1.92
+    m_height: 1.08
+    m_distanceFromScreen: 2.08
+    m_imageOffsetYRate: 0
+    m_viewport:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0.16666667
+      height: 1
+    m_maskTexture: {fileID: 2800000, guid: a9af33ed7ff85024ca7f30f9f7f61fa3, type: 3}
+  - m_localPosition: {x: 0.10000004, y: 8.350001, z: 8.490005}
+    m_localRotation: {x: -0.068256155, y: 0.92741996, z: -0.11730678, w: -0.34852907}
+    m_near: 0.05
+    m_far: 25
+    m_width: 1.92
+    m_height: 1.08
+    m_distanceFromScreen: 2.2299998
+    m_imageOffsetYRate: 0
+    m_viewport:
+      serializedVersion: 2
+      x: 0.16666667
+      y: 0
+      width: 0.16666667
+      height: 1
+    m_maskTexture: {fileID: 2800000, guid: a1cdd856b283046489d8b99d55cd9207, type: 3}
+  - m_localPosition: {x: 0.95000017, y: 8.550002, z: -8.230007}
+    m_localRotation: {x: -0.124373145, y: 0.37196892, z: -0.058993727, w: -0.91798156}
+    m_near: 0.05
+    m_far: 25
+    m_width: 1.92
+    m_height: 1.08
+    m_distanceFromScreen: 2.2499998
+    m_imageOffsetYRate: 0
+    m_viewport:
+      serializedVersion: 2
+      x: 0.33333334
+      y: 0
+      width: 0.16666667
+      height: 1
+    m_maskTexture: {fileID: 2800000, guid: 170b496aa440cc34b9e04111121a4a43, type: 3}
+  - m_localPosition: {x: -4.03, y: 7.9000006, z: -7.8500013}
+    m_localRotation: {x: -0.13015491, y: 0.0018387585, z: -0.0066326945, w: -0.9914698}
+    m_near: 0.05
+    m_far: 25
+    m_width: 1.92
+    m_height: 1.08
+    m_distanceFromScreen: 2.1999998
+    m_imageOffsetYRate: 0
+    m_viewport:
+      serializedVersion: 2
+      x: 0.5
+      y: 0
+      width: 0.16666667
+      height: 1
+    m_maskTexture: {fileID: 2800000, guid: b95caccb6d5ae0849ab2d6aec80bf71d, type: 3}
+  - m_localPosition: {x: -4.770002, y: 8.250002, z: 6.2999964}
+    m_localRotation: {x: -0.043572433, y: 0.8238019, z: -0.5602065, w: -0.07497106}
+    m_near: 0.05
+    m_far: 25
+    m_width: 1.92
+    m_height: 1.08
+    m_distanceFromScreen: 1.14
+    m_imageOffsetYRate: 0
+    m_viewport:
+      serializedVersion: 2
+      x: 0.6666667
+      y: 0
+      width: 0.16666667
+      height: 1
+    m_maskTexture: {fileID: 2800000, guid: 67e1630941adb31429e409c21f6a3f72, type: 3}
+  - m_localPosition: {x: -4.820002, y: 8.250002, z: -5.4999933}
+    m_localRotation: {x: -0.60298115, y: 0.07463832, z: -0.04529325, w: -0.79296374}
+    m_near: 0.05
+    m_far: 25
+    m_width: 1.92
+    m_height: 1.08
+    m_distanceFromScreen: 1.09
+    m_imageOffsetYRate: 0
+    m_viewport:
+      serializedVersion: 2
+      x: 0.8333333
+      y: 0
+      width: 0.16666667
+      height: 1
+    m_maskTexture: {fileID: 2800000, guid: 68c5fa464ce8d7e4b84822e70999fca5, type: 3}
+--- !u!114 &114252093526332588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1958403947649410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68efbd33add33b547843aef86d2cdbf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
