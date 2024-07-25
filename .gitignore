@@ -1,5 +1,24 @@
 # This .gitignore file should be placed at the root of your Unity project directory
 #
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+*.meta
+*.so
+*.prefab
+*.mat
+*.unity
+*.cginc
+*.assets
+*.resS
+*.config
+*.dill
+*.info
+
+=======
+>>>>>>> parent of 12418142 (add ignore file)
+=======
+>>>>>>> parent of 12418142 (add ignore file)
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 /[Ll]ibrary/
@@ -69,4 +88,12 @@ crashlytics-build.properties
 
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
+<<<<<<< HEAD
+<<<<<<< HEAD
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+=======
+/[Aa]ssets/[Ss]treamingAssets/aa/*
+>>>>>>> parent of 12418142 (add ignore file)
+=======
+/[Aa]ssets/[Ss]treamingAssets/aa/*
+>>>>>>> parent of 12418142 (add ignore file)
