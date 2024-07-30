@@ -12,7 +12,7 @@
 *.assets
 *.resS
 *.config
-*.dill
+*.dll
 *.info
 
 =======
