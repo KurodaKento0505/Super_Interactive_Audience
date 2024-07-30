@@ -12,8 +12,9 @@
 *.assets
 *.resS
 *.config
-*.dill
+*.dll
 *.info
+*.png
 
 =======
 >>>>>>> parent of 12418142 (add ignore file)
