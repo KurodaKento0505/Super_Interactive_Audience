@@ -133,6 +133,22 @@ public static class OptitrackHiResTimer
 /// </summary>
 public class OptitrackStreamingClient : MonoBehaviour
 {
+    public void LogLatestRigidBodyPosition(int rigidBodyId)
+    {
+        OptitrackRigidBodyState latestState = GetLatestRigidBodyState(rigidBodyId);
+
+        if (latestState != null)
+        {
+            Vector3 position = latestState.Pose.Position;
+            Debug.Log("Position: " + position.ToString());
+        }
+        else
+        {
+            Debug.LogWarning("No data available for rigid body ID: " + rigidBodyId);
+        }
+    }
+
+
     public enum ClientConnectionType
     {
         Multicast,

@@ -34,7 +34,8 @@ namespace lasp
                     deleteCamCount = 6;
                     break;
             }
-            m_distortedDrawer.DestroyProjectorCamerasRenge(deleteCamIndex, deleteCamCount);
+            /////////////////////////////////////////変更点
+            //m_distortedDrawer.DestroyProjectorCamerasRenge(deleteCamIndex, deleteCamCount);
         }
     }
 }

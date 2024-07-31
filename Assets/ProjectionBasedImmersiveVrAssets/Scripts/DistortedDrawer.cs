@@ -162,8 +162,9 @@ namespace PbiVr
             if (m_projectorCamPrefab == null) Debug.Log("DistortedDrawer: ProjectorCamPrefab is not selected. Create camera with default settings.");
             m_projectorCamerasLeft = SetupProjectorCameras("Left", m_layerNameLeft, m_projectorParams, m_screenGameObjLeft.transform, m_projectorCamPrefab);
             m_projectorCamerasRight = SetupProjectorCameras("Right", m_layerNameRight, m_projectorParams, m_screenGameObjRight.transform, m_projectorCamPrefab);
-            foreach (var c in m_projectorCamerasLeft) c.stereoTargetEye = StereoTargetEyeMask.Left;
-            foreach (var c in m_projectorCamerasRight) c.stereoTargetEye = StereoTargetEyeMask.Right;
+            ///////////////////////////////////変更点
+            //foreach (var c in m_projectorCamerasLeft) c.stereoTargetEye = StereoTargetEyeMask.Left;
+            //foreach (var c in m_projectorCamerasRight) c.stereoTargetEye = StereoTargetEyeMask.Right;
 
             // setup blending masks
             m_maskApplyer = GetComponent<CommandBufferMaskApplyer>();
@@ -454,8 +455,72 @@ namespace PbiVr
                 }
                 projParams[i].CopyValuesTo(ref cam);
 
-                cam.cullingMask = 1 << LayerMask.NameToLayer(layerName);
+                /////////////////////////////////////////変更点
+                int dpos = 0;
 
+                switch (i)
+                {
+                    case 0:
+                        dpos = 6;
+                        break;
+
+                    case 1:
+                        dpos = 7;
+                        break;
+
+                    case 2:
+                        dpos = 0;
+                        break;
+
+                    case 3:
+                        dpos = 1;
+                        break;
+
+                    case 4:
+                        dpos = 10;
+                        break;
+
+                    case 5:
+                        dpos = 11;
+                        break;
+
+                    case 6:
+                        dpos = 2;
+                        break;
+
+                    case 7:
+                        dpos = 3;
+                        break;
+
+                    case 8:
+                        dpos = 4;
+                        break;
+
+                    case 9:
+                        dpos = 5;
+                        break;
+
+                    case 10:
+                        dpos = 8;
+                        break;
+
+                    case 11:
+                        dpos = 9;
+                        break;
+                }
+
+
+                if (layerName == m_layerNameRight)
+                {
+                    cam.rect = new Rect(0.08333f * dpos, 0.5f, 0.08333f, 0.5f);
+                }
+                else
+                {
+                    cam.rect = new Rect(0.08333f * dpos, 0, 0.08333f, 0.5f);
+                }
+
+
+                cam.cullingMask = 1 << LayerMask.NameToLayer(layerName);
                 cam.clearFlags = CameraClearFlags.SolidColor;
                 cam.backgroundColor = new Color(0, 0, 0, 0);
 
